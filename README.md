@@ -28,11 +28,11 @@ Follow these steps to set up your Amazon Connect instance:
 
 ### 1. Clone the Repository
 
-```sh
+
 git clone https://github.com/your-repository/terraform-amazon-connect.git
 cd terraform-amazon-connect
 
-2. Configure AWS Secrets Manager
+### 2. Configure AWS Secrets Manager
 Store your Connect administrator password in AWS Secrets Manager. You can do this via the AWS Management Console or AWS CLI. Make sure to name your secret connect-admin-password.
 
 3. Modify Variable Values
