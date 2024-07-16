@@ -35,37 +35,40 @@ cd terraform-amazon-connect
 2. Configure AWS Secrets Manager
 Store your Connect administrator password in AWS Secrets Manager. You can do this via the AWS Management Console or AWS CLI. Make sure to name your secret connect-admin-password.
 
-### 3. Modify Variable Values
+3. Modify Variable Values
 Edit the dev.tfvars file to specify your variable values.
 
 identity_management_type = "CONNECT_MANAGED"
 instance_alias           = "my-connect-instance"
 lambda_function_arn      = "arn:aws:lambda:region:account-id:function:function-name"
-### 4. Initialize Terraform
+4. Initialize Terraform
 Initialize your Terraform working directory.
 
 terraform init
-### 5. Plan the Terraform Execution
+5. Plan the Terraform Execution
 Create an execution plan to review the resources that will be created.
 
 terraform plan -var-file="dev.tfvars"
-### 6. Apply the Terraform Configuration
+6. Apply the Terraform Configuration
 Apply the Terraform configuration to create the resources.
 
 terraform apply -var-file="dev.tfvars"
-## 7. Verify the Setup
+7. Verify the Setup
 Once the resources are created, verify that the Amazon Connect instance is set up correctly and that the Connect user has been created with the specified password.
+
+Clean Up
 To destroy the resources created by this Terraform configuration, run:
 
-
 terraform destroy -var-file="dev.tfvars"
-## Contributing
+
+Contributing
 If you wish to contribute to this project, please fork the repository and submit a pull request with your changes.
 
-## License
+License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-This README file provides a comprehensive introduction to the project, including prerequisites, 
+This README file provides a comprehensive introduction to the project, including prerequisites, project structure, steps to use, and additional information on contributing and licensing. Adjust the content as needed to match your project's specifics.
+
 
 
 
