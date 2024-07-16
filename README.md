@@ -38,9 +38,10 @@ Store your Connect administrator password in AWS Secrets Manager. You can do thi
 ### 3. Modify Variable Values
 Edit the dev.tfvars file to specify your variable values.
 
-identity_management_type = "CONNECT_MANAGED"
-instance_alias           = "my-connect-instance"
-lambda_function_arn      = "arn:aws:lambda:region:account-id:function:function-name"
+identity_management_type = ""
+instance_alias           = ""
+lambda_function_arn      = ""
+
 ### 4. Initialize Terraform
 Initialize your Terraform working directory.
 
